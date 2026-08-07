@@ -181,3 +181,8 @@ yalc.*
 *.yalc
 
 package-libonly.json
+
+# Workspace task and Bun caches
+.turbo/
+.bun/
+bun-debug.log*
