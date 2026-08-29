@@ -31,7 +31,7 @@ test("published package does not depend on manifold-3d", async () => {
       ...process.env,
       npm_config_cache: join(auditDir, "npm-cache"),
     }
-    const pack = Bun.spawnSync(["npm", "pack", "--pack-destination", packDir], {
+    const pack = Bun.spawnSync(["pnpm", "pack", "--pack-destination", packDir], {
       cwd: new URL("..", import.meta.url).pathname,
       env: npmEnv,
     })
